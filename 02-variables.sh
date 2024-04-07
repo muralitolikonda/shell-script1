@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# comments
+PERSON1=RAMESH
+PERSON2=SURESH
 
-echo "Ramesh: hello suresh, good morning"
-echo "suresh: hello ramesh,very good morning"
-echo "ramesh: how are you? ramesh"
-echo "suresh: am good ramesh"
+echo "$PERSON1: hello $PERSON2, good morning"
+echo "$PERSON2: hello $PERSON1,very good morning"
+echo "r$PERSON1: how are you? $PERSON1"
+echo "$PERSON2: am good $PERSON1"
