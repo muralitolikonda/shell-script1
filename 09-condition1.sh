@@ -11,7 +11,7 @@ else
     echo "you are root user"
 fi
 
-yum install mysqll -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then 
@@ -19,4 +19,14 @@ then
     exit 1
 else
     echo "Installing mysql success"
+fi
+
+yum install GIT -y
+
+if [ $? -ne 0 ]
+then 
+    echo "ERROR:: Installing GIT failed"
+    exit 1
+else
+    echo "Installing GIT success"
 fi
