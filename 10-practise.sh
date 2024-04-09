@@ -10,7 +10,7 @@ then
 
 else
     echo "You are root user"
-    ecit 1
+    exit 1
 fi 
 
 yum install mysql -y
