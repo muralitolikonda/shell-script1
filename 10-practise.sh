@@ -10,10 +10,10 @@ then
 
 else
     echo "You are root user"
-    
+    ecit 1
 fi 
 
-yum intall mysql -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then 
