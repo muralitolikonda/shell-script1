@@ -6,3 +6,7 @@ NUMBER2=$2
 SUM=$(($NUMBER1+$NUMBER2))
 
 echo "Total::$SUM"
+
+echo "how many arguments passed: $#"
+echo "All arguments: $@"
+echo "script name: $0"
