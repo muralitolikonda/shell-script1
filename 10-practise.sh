@@ -1,5 +1,12 @@
 #!/bin/bash
 
-DATE=$(date)
+USERNAME=$1
+PASSWORD=$2
 
-echo "starting date and time is: $DATE"
+echo "username is: $USERNAME"
+
+read -s USERNAME
+
+echo "password is: $PASSWORD"
+
+read -s PASSWORD
