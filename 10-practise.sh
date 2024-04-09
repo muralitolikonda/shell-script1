@@ -15,7 +15,7 @@ fi
 
 yum intall mysql -y
 
-if [ $ID -ne 0 ]
+if [ $? -ne 0 ]
 then 
 
     echo "Intalling mysql failed"
