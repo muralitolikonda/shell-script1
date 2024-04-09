@@ -1,12 +1,8 @@
 #!/bin/bash
 
-USERNAME=$1
-PASSWORD=$2
+FRUITS= ("apple" "banana" "mango")
 
-echo "username is: $USERNAME"
-
-read -s USERNAME
-
-echo "password is: $PASSWORD"
-
-read -s PASSWORD
+echo " First value: ${FRUITS[0]}"
+echo " Second value: ${FRUITS[1]}"
+echo " Third value: ${FRUITS[2]}"
+echo " All fruits: ${FRUITS[@]}"
