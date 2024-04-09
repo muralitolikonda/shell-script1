@@ -13,17 +13,6 @@ else
     exit 1
 fi 
 
-yum install mysql -y
-
-if [ $? -ne 0 ]
-then 
-
-    echo "Intalling mysql failed"
-    exit 1
-else
-    echo "Intalling mysql success"
-    exit 1
-fi
 
 yum install git -y
 
