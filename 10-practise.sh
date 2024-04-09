@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "murali tolikonda"
+DATE=$(date)
+
+echo "starting date and time is: $DATE"
