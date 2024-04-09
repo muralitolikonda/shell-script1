@@ -25,5 +25,17 @@ else
     exit 1
 fi
 
+yum install git -y
+
+if [ $? -ne 0 ]
+then 
+
+    echo "Intalling git failed"
+    exit 1
+else
+    echo "Intalling git success"
+    exit 1
+fi
+
 
 
