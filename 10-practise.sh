@@ -3,7 +3,8 @@
 PERSON1=$1
 PERSON2=$2
 
-echo "$ERSON1: hi $ERSON2"
-echo "$ERSON2: Hi $ERSON1"
-echo "$ERSON1: How are you $ERSON2"
-echo "$ERSON2: I am good, how are you $ERSON1"
+echo "$PERSON1: hi $PERSON2"
+echo "$PERSON2: Hi $PERSON1"
+echo "$PERSON1: How are you $PERSON2"
+echo "$PERSON2: I am good, how are you $PERSON1"
+
