@@ -1,8 +1,18 @@
 #!/bin/bash
 
-FRUITS=("apple" "banana" "mango")
+ID=$(id -u)
 
-echo " First value: ${FRUITS[0]}"
-echo " Second value: ${FRUITS[1]}"
-echo " Third value: ${FRUITS[2]}"
-echo " All fruits: ${FRUITS[@]}"
+if [ $ID -ne 0 ]
+then 
+
+    echo "ERROR:: Please run the script with the root user"
+    exit 1
+
+else
+    echo "You are root user"
+    exit 1
+fi 
+
+yum intall mysql -y
+
+
