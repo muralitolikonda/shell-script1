@@ -10,9 +10,20 @@ then
 
 else
     echo "You are root user"
-    exit 1
+    
 fi 
 
 yum intall mysql -y
+
+if [ $ID -ne 0 ]
+then 
+
+    echo "Intalling mysql failed"
+    exit 1
+else
+    echo "Intalling mysql success"
+    exit 1
+fi
+
 
 
