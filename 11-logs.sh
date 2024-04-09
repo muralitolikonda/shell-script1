@@ -26,7 +26,7 @@ VALIDATE () {
 
 if [ $ID -ne 0 ]
 then 
-    echo -e "\e[31 ERROR:: $N Please run the script with the root user"
+    echo -e "$R ERROR:: $N Please run the script with the root user"
     exit 1 # we are stopping the script to run 
 
 else 
