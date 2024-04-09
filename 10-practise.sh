@@ -10,7 +10,7 @@ then
 
 else
     echo "You are root user"
-    exit 1
+    
 fi 
 
 
@@ -23,7 +23,7 @@ then
     exit 1
 else
     echo "Intalling git success"
-    exit 1
+    
 fi
 
 
