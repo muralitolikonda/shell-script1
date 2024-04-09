@@ -11,10 +11,10 @@ LOGFILE="/tmp/$0-$TIMESTAMP.LOG"
 VALIDATE () {
     if [ $1 -ne 0 ]
     then 
-        echo "ERROR:: $2 ...failed"
+        echo -e "ERROR:: $2 ...\e[31 failed"
         exit 1
     else
-        echo "$2 ...success"
+        echo -e "$2 ...\e[32 success"
     fi
 
 }
@@ -22,7 +22,7 @@ VALIDATE () {
 
 if [ $ID -ne 0 ]
 then 
-    echo "ERROR:: Please run the script with the root user"
+    echo -e "\e[31 ERROR:: \e[0m Please run the script with the root user"
     exit 1 # we are stopping the script to run 
 
 else 
